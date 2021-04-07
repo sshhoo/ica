@@ -20,6 +20,7 @@ check_number_dict={}
 for i in range(len(extension)):
 	file_extension_dict[extension[i]]=0
 
+
 #拡張子付き
 if extension[0]!='no_file_extension':
 	for i in range(len(extension)):
