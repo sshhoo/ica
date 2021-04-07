@@ -1,16 +1,15 @@
 import os
 import argparse
 import re
-import shutil
 
 parser=argparse.ArgumentParser()
-parser.add_argument('--check_dir',type=str,default='_',help='Path to folders of images.')
+parser.add_argument('--image_dir',type=str,default='_',help='Path to folders of images.')
 parser.add_argument('--extension',type=str,default='no_file_extension',help='check extension')
 parser.add_argument('--subdir_mode',action='store_true')
 parser.add_argument('--check_number',type=int,default=-1,help='check file number')
 args=parser.parse_args()
 
-extension=(args.extension).split(',')
+extension=args.extension.split(',')
 dir_list=[]
 cnum_list=[]
 file_extension_dict={}
@@ -20,11 +19,16 @@ check_number_dict={}
 for i in range(len(extension)):
 	file_extension_dict[extension[i]]=0
 
+if args.image_dir!='_':
+	if args.image_dir[-1]!='/':
+		print('Add / as the last character, please.')
+		print(args.image_dir)
+		sys.exit(1)
 
 #拡張子付き
 if extension[0]!='no_file_extension':
 	for i in range(len(extension)):
-		for (dir,subs,files) in os.walk(args.check_dir):
+		for (dir,subs,files) in os.walk(args.image_dir):
 			for file in files:
 				target=os.path.join(dir,file)
 				if os.path.isfile(target):
@@ -60,8 +64,8 @@ if extension[0]!='no_file_extension':
 			print(cnum_list[i])
 			print(check_number_dict[cnum_list[i]])
 			print('')
-	print('check_dir')	
-	print(args.check_dir)
+	print('image_dir')	
+	print(args.image_dir)
 	print('')
 	for i in range(len(extension)):
 		print(extension[i])
@@ -70,7 +74,7 @@ if extension[0]!='no_file_extension':
 
 #なし
 else:
-	for (dir,subs,files) in os.walk(args.check_dir):
+	for (dir,subs,files) in os.walk(args.image_dir):
 		for file in files:
 			target=os.path.join(dir,file)
 			if os.path.isfile(target):
@@ -100,8 +104,8 @@ else:
 			print(cnum_list[i])
 			print(check_number_dict[cnum_list[i]][extension[0]])
 			print('')
-	print('check_dir')	
-	print(args.check_dir)
+	print('image_dir')	
+	print(args.image_dir)
 	print('')
 	print('file_number')
 	print(file_extension_dict[extension[0]])
