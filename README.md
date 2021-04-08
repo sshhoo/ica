@@ -39,9 +39,10 @@ Next, go to "SDK Manager" in "Configure" and install "SDK" and "NDK".
 Then, open 
 `ica/examples/lite/codelabs/flower_classification/android/finish/`
  from "Open an Existing Project".  
+<div align="center"><img src="https://user-images.githubusercontent.com/40710706/114062417-747f8380-98d2-11eb-8d51-992956350a41.png"></div>
 The progress of installing the missing programs will be shown in the progress bar.  
 After the installation is complete, close Android Studio.  
-<div align="center"><img src="https://user-images.githubusercontent.com/40710706/114062417-747f8380-98d2-11eb-8d51-992956350a41.png"></div>
+
 <div align="center"><img src="https://user-images.githubusercontent.com/40710706/114062408-71849300-98d2-11eb-8448-3e75cc863229.png"></div>
 
 - ### pip requirements
