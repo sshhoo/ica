@@ -20,7 +20,7 @@ By following the steps and executing the code, you can create an Android applica
 - [License](#License)
 
 ## Workflow overview
-<div align="center"><img src="https://user-images.githubusercontent.com/40710706/114008060-d91feb80-989c-11eb-8efb-9ffd5534c20b.png"></div>
+<div align="center"><img src="https://user-images.githubusercontent.com/40710706/114029149-31aeb300-98b4-11eb-9df4-7b3b50da883c.png"></div>
 
 ## Setting
 
