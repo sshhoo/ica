@@ -16,7 +16,7 @@ By following the steps and executing the code, you can create an Android applica
     - [Adjust file number & resize image](#Adjust-file-number--resize-image)
     - [Image2tfrecord](#Image2tfrecord)
     - [Learning & export model, labels](#Learning--export-model-labels)
-- [Page setup](#page-setup)
+- [Build APK file & install app](#Build-APK-file--install-app)
     - [Upload the page tree file](#upload-the-page-tree-file)
     - [Go to the import view](#go-to-the-import-view)
     - [Import the page tree](#import-the-page-tree)
@@ -62,6 +62,11 @@ By following the steps and executing the code, you can create an Android applica
 
 
 ### Learning & export model, labels
+
+## Build APK file & install app
+
+
+
 
 
 
