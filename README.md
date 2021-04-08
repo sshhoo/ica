@@ -5,7 +5,7 @@ By following the steps and executing the code, you can create an Android applica
 
 ## Table of content
 - [Workflow](#Workflow)
-- [Installation & Setting](#Installation & Setting)
+- [Installation & Setting](#Installation-Setting)
 
 
 
