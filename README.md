@@ -6,9 +6,9 @@ By following the steps and executing the code, you can create an Android applica
 ## Table of content
 - [Workflow](#Workflow)
 - [Setting](#Setting)
-    - [git clone repository](#gitclonerepository)
-    - [Android Studio](#AndroidStudio)
-    - [pip requirements](#piprequirements)
+    - [git clone repository](#git-clone-repository)
+    - [Android Studio](#Android-Studio)
+    - [pip requirements](#pip-requirements)
 - [TYPO3 setup](#typo3-setup)
     - [Extension](#extension)
     - [Database](#database)
@@ -23,21 +23,21 @@ By following the steps and executing the code, you can create an Android applica
 <div align="center"><img src="https://user-images.githubusercontent.com/40710706/114008060-d91feb80-989c-11eb-8efb-9ffd5534c20b.png"></div>
 
 ## Setting
-af
+
 
 
 ### git clone repository
-ad
+
 
 ### Android Studio
-adf
+
 
 
 
 
 
 ### pip requirements
-adf
+
 
 
 
