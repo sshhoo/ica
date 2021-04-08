@@ -129,5 +129,3 @@ dmypy.json
 .pyre/
 
 tensorflow_lite_app_caution
-dataset/*
-dataset_ori/*
