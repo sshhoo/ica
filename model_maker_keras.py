@@ -329,7 +329,3 @@ tflite_model=converter.convert()
 open(f'./model_result/{os.path.basename(os.path.dirname(args.image_dir))}_model.tflite','wb').write(tflite_model)
 with open(f'./model_result/{os.path.basename(os.path.dirname(args.image_dir))}_labels.txt',mode='w') as f:
 	f.write('\n'.join(list(os.walk(args.image_dir))[0][1]))
-
-
-
-
