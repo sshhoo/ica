@@ -6,7 +6,7 @@ By following the steps and executing the code, you can create an Android applica
 ## Table of content
 - [Workflow](#Workflow)
 - [Installation](#Installation)
-    - [Android Studio](#Android Studio)
+    - [Android Studio](#AndroidStudio)
     - [Composer](#composer)
 - [TYPO3 setup](#typo3-setup)
     - [Extension](#extension)
