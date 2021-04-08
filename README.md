@@ -11,7 +11,7 @@ By following the steps and executing the code, you can create an Android applica
     - [pip requirements](#pip-requirements)
     - [Dataset](#dataset)
 - [Usage](#usage)
-    - [Extension](#extension)
+    - [file_extension_number_checker.py](#file_extension_number_checker.py)
     - [Database](#database)
 - [Page setup](#page-setup)
     - [Upload the page tree file](#upload-the-page-tree-file)
@@ -45,7 +45,7 @@ By following the steps and executing the code, you can create an Android applica
 ## Usage
 
 
-
+### file_extension_number_checker.py
 
 
 
