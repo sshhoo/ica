@@ -7,9 +7,10 @@ By following the steps and executing the code, you can create an Android applica
 - [Workflow](#Workflow)
 - [Setting](#Setting)
     - [git clone repository](#git-clone-repository)
-    - [Android Studio](#Android-Studio)
+    - [Android Studio](#android-studio)
     - [pip requirements](#pip-requirements)
-- [TYPO3 setup](#typo3-setup)
+    - [Dataset](#dataset)
+- [Usage](#usage)
     - [Extension](#extension)
     - [Database](#database)
 - [Page setup](#page-setup)
@@ -37,6 +38,11 @@ By following the steps and executing the code, you can create an Android applica
 
 
 ### pip requirements
+
+### Dataset
+
+
+## Usage
 
 
 
