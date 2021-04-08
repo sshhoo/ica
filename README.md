@@ -61,7 +61,7 @@ By following the steps and executing the code, you can create an Android applica
 ### Image2tfrecord
 
 
-### Learning & export model,labels
+### Learning & export model, labels
 
 
 
