@@ -5,7 +5,7 @@ By following the steps and executing the code, you can create an Android applica
 
 ## Table of content
 - [Workflow](#Workflow)
-- [Installation & Setting](#Installation-Setting)
+- [Installation](#Installation)
 
 
 
@@ -26,7 +26,7 @@ By following the steps and executing the code, you can create an Android applica
 ## Workflow
 <div align="center"><img src="https://user-images.githubusercontent.com/40710706/114008060-d91feb80-989c-11eb-8efb-9ffd5534c20b.png"></div>
 
-## Installation & Setting
+## Installation
 
 
 
