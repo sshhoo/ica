@@ -129,3 +129,5 @@ dmypy.json
 .pyre/
 
 tensorflow_lite_app_caution
+ica.drawio
+ica.png
