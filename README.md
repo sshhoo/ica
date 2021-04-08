@@ -23,11 +23,12 @@ By following the steps and running the code, you can create an Android applicati
 <div align="center"><img src="https://user-images.githubusercontent.com/40710706/114029149-31aeb300-98b4-11eb-9df4-7b3b50da883c.png"></div>
 
 ## Setting
-
-
+In order to run the code and create the app, the following settings are required.  
 
 ### git clone repository
+To download the repository, including the submodule "examples", run the following command.  
 
+`git clone --recursive ~.git`
 
 ### Android Studio
 
