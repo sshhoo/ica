@@ -31,11 +31,9 @@ To download the repository, including the submodule "examples", run the followin
 `git clone --recursive https://github.com/sshhoo/ica.git`
 
 - ### Android Studio
-
-
-
-
-
+Please refer to the following URL to install Android Studio.  
+The following explanation assumes you have installed it in /opt/ on Linux.  
+[URL](https://developer.android.com/studio/install)
 
 - ### pip requirements
 
