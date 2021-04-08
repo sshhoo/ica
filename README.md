@@ -30,35 +30,35 @@ To download the repository, including the submodule "examples", run the followin
 
 `git clone --recursive https://github.com/sshhoo/ica.git`
 
-### Android Studio
+- ### Android Studio
 
 
 
 
 
 
-### pip requirements
+- ### pip requirements
 
-### Dataset
+- ### Dataset
 
 
 ## Usage
 
 
-### Check file number
+- ### Check file number
 
 
-### Delete unnecessary file
+- ### Delete unnecessary file
 
 
-### Adjust file number & resize image
+- ### Adjust file number & resize image
 
 
 
-### Image2tfrecord
+- ### Image2tfrecord
 
 
-### Learning & export model, labels
+- ### Learning & export model, labels
 
 
 
