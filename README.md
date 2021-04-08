@@ -50,7 +50,7 @@ tensorflow(-gpu)>=2.4.1
 - ### Dataset
 Store the images to be learned in a directory for each class.  
 Place a directory containing a directory for each class in the root directory.  
-The size of the images doesn't matter.  
+The size of images doesn't matter(to be adjusted later).  
 But, please note the extension of images that can be loaded is ".jpg" or ".png".  
 
 <div align="center"><img src="https://user-images.githubusercontent.com/40710706/114058712-ac84c780-98ce-11eb-93f3-3f3165b3a0a6.png"></div>
