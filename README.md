@@ -4,7 +4,7 @@ I created this program because [the official example application](https://www.te
 By following the steps and executing the code, you can create an Android application that classifies images using images prepared by you and network models created by you.
 
 ## Table of content
-- [Workflow](#Workflow)
+- [Workflow overview](#Workflow-overview)
 - [Setting](#Setting)
     - [git clone repository](#git-clone-repository)
     - [Android Studio](#android-studio)
@@ -23,7 +23,7 @@ By following the steps and executing the code, you can create an Android applica
     - [SEO-friendly URLs](#seo-friendly-urls)
 - [License](#License)
 
-## Workflow
+## Workflow overview
 <div align="center"><img src="https://user-images.githubusercontent.com/40710706/114008060-d91feb80-989c-11eb-8efb-9ffd5534c20b.png"></div>
 
 ## Setting
