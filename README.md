@@ -25,7 +25,7 @@ By following the steps and running the code, you can create an Android applicati
 ## Setting
 In order to run the code and create the app, the following settings are required.  
 
-### git clone repository
+- ### git clone repository
 To download the repository, including the submodule "examples", run the following command.  
 
 `git clone --recursive https://github.com/sshhoo/ica.git`
