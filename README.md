@@ -1,1 +1,1 @@
-# ica
+# Image Classification App
