@@ -36,6 +36,13 @@ The following explanation assumes you have installed it in /opt/ on Linux.
 [URL](https://developer.android.com/studio/install)
 
 - ### pip requirements
+Use `pip` to install this package.  
+`pip install pillow tensorflow(or tensorflow-gpu)`
+
+####Requirement  
+- python>=3.6.13  
+- pillow>=8.2.0  
+- tensorflow(-gpu)>=2.4.1  
 
 - ### Dataset
 
