@@ -33,7 +33,16 @@ To download the repository, including the submodule "examples", run the followin
 - ### Android Studio
 Please refer to the following URL to install Android Studio.  
 The following explanation assumes you have installed it in /opt/ on Linux.  
-[URL](https://developer.android.com/studio/install)
+[URL](https://developer.android.com/studio/install)  
+
+Next, go to "SDK Manager" in "Configure" and install "SDK" and "NDK".
+Then, open 
+`ica/examples/lite/codelabs/flower_classification/android/finish/`
+ from "Open an Existing Project".  
+The progress of installing the missing programs will be shown in the progress bar.  
+After the installation is complete, close Android Studio.  
+<div align="center"><img src="https://user-images.githubusercontent.com/40710706/114062417-747f8380-98d2-11eb-8d51-992956350a41.png"></div>
+<div align="center"><img src="https://user-images.githubusercontent.com/40710706/114062408-71849300-98d2-11eb-8448-3e75cc863229.png"></div>
 
 - ### pip requirements
 Use `pip` to install this package.  
