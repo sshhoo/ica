@@ -35,7 +35,7 @@ Please refer to the following URL to install Android Studio.
 The following explanation assumes you have installed it in /opt/ on Linux.  
 [URL](https://developer.android.com/studio/install)  
 
-Next, go to "SDK Manager" in "Configure" and install "SDK" and "NDK".
+Next, go to "SDK Manager" in "Configure" and install "SDK" and "NDK"(Required for the device you plan to install).
 Then, open 
 `ica/examples/lite/codelabs/flower_classification/android/finish/`
  from "Open an Existing Project".  
