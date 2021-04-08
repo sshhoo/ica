@@ -40,7 +40,7 @@ Use `pip` to install this package.
 
 `pip install pillow tensorflow(or tensorflow-gpu)`
 
-*Requirement*  
+#### Requirements  
 - python>=3.6.13  
 - pillow>=8.2.0  
 - tensorflow(-gpu)>=2.4.1  
