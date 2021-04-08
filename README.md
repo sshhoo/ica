@@ -68,7 +68,7 @@ But, please note the extension of images that can be loaded is ".jpg" or ".png".
 <div align="center"><img src="https://user-images.githubusercontent.com/40710706/114058712-ac84c780-98ce-11eb-93f3-3f3165b3a0a6.png"></div>
 
 ## Usage
-
+From here, you run the program to adjust the number of images and their sizes, train them, and extract the network model information.  
 
 - ### Check file number
 
