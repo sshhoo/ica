@@ -25,6 +25,7 @@ parser.add_argument('--op',type=str,default='sgd',help='optimizer')
 parser.add_argument('--loss',type=str,default='categorical_crossentropy',help='loss function')
 parser.add_argument('--stn',type=int,default=10000,help='tfrecords per image number')
 parser.add_argument('--original_mode',action='store_true',help='original model mode')
+parser.add_argument('--tensorflow_mode',action='store_true',help='tensorflow model mode')
 args=parser.parse_args()
 
 AUTOTUNE=tf.data.experimental.AUTOTUNE
@@ -254,10 +255,13 @@ def original_model(height,width,depth,train_label):
 	
 	return model
 
-if args.original_mode!=True:
-	model=trained_model(args.mf,args.mw,height,width,depth,args.mtrain_mode,train_label)
+if args.tensorflow_mode!=True:
+	if args.original_mode!=True:
+		model=trained_model(args.mf,args.mw,height,width,depth,args.mtrain_mode,train_label)
+	else:
+		model=original_model(height,width,depth,train_label)
 else:
-	model=original_model(height,width,depth,train_label)
+	pass
 
 model.compile(optimizer=args.op,loss=args.loss,metrics=['accuracy'])
 model.summary()
@@ -329,7 +333,3 @@ tflite_model=converter.convert()
 open(f'./model_result/{os.path.basename(os.path.dirname(args.image_dir))}_model.tflite','wb').write(tflite_model)
 with open(f'./model_result/{os.path.basename(os.path.dirname(args.image_dir))}_labels.txt',mode='w') as f:
 	f.write('\n'.join(list(os.walk(args.image_dir))[0][1]))
-
-
-
-
