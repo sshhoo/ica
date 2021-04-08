@@ -13,7 +13,7 @@ By following the steps and executing the code, you can create an Android applica
 - [Usage](#usage)
     - [Check file number](#Check-file-number)
     - [Delete unnecessary file](#Delete-unnecessary-file)
-    - [Adjust file number & resize image](#Adjust-file-number-&-resize-image)
+    - [Adjust file number & resize image](#Adjust-file-number--resize-image)
 - [Page setup](#page-setup)
     - [Upload the page tree file](#upload-the-page-tree-file)
     - [Go to the import view](#go-to-the-import-view)
