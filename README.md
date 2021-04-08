@@ -24,10 +24,13 @@ By following the steps and executing the code, you can create an Android applica
 
 ## Setting
 
+### git clone repository
+
+
 ### Android Studio
 
 
-### git clone repository
+
 
 
 
