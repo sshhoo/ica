@@ -124,6 +124,7 @@ From here, you run the program to adjust the number of images and their sizes, t
 - ### Learning & export model, labels
 	We will use the created tfrecord for learning.  
 	By learning, we will create the "model.tflite" and "labels.txt" required for the application.  
+	
 	- Get the label name and other information from the directory specified by "--image_dir".  
 	Specify the directory that was used to create `tfrecord/{--resize_int}_resized_{--image_dir}_train/`(i.e., `{--resize_int}_resized_{--image_dir}_train/`).  
 	- Use "--tfr_train_dir" to specify the directory where the tfrecord for training is located.  
@@ -156,6 +157,20 @@ From here, you run the program to adjust the number of images and their sizes, t
 	If you want to use this code as is, use the default.  
 	- If "--original_mode" is specified, training will be performed using the network model that you created yourself.  
 	You can freely build your own network model by modifying the corresponding part.  
+
+	After executing the code, the following directories and files will be generated.  
+	- speed/model_speed.txt  
+	This file contains the training time of the network model.
+	- log_dir/  
+	Logs of the training results are stored in this directory.  
+	You can check the training results by typing the command "tensorboard --logdir=log_dir".  
+	- model_result/~_test_evaluate.txt  
+	This file contains the values of accuracy and loss when using the test data.  
+	- model_result/~_model.tflite  
+	This is the model file needed to create the application.  
+	- model_result/~_labels.txt  
+	This is the label information required to create the app.  
+
 
 	#### Models
 	The following is a list of model names that can be selected by "--mf".  
