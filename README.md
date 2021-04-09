@@ -77,7 +77,7 @@ From here, you run the program to adjust the number of images and their sizes, t
     - Use "--extension" to specify the extension you want to count (e.g. ".jpg", ".png").  
     - By adding "--subdir_mode", the number of files in subdirectories is also displayed.  
     If "--check_number" is specified as an integer, directories other than the specified number of files will be displayed.  
-
+	
     ```
     python file_extension_number_checker.py --image_dir dataset/
                                             --extension .png
@@ -91,7 +91,7 @@ From here, you run the program to adjust the number of images and their sizes, t
     - By adding "--without_mode", files other than the extension specified by "--extension" will be selected.  
     The file will not be removed until "--remove_mode" is added (only to check the file).  
     Note that this option will cause the file to be removed.  
-
+	
     ```
     python file_extension_remove.py --image_dir dataset/
                                     --extension .png
@@ -104,7 +104,7 @@ From here, you run the program to adjust the number of images and their sizes, t
     - Use "--file_number" to specify the number of files you want to align per class.  
     - Use "--image_dir" to specify the directory to be scanned(the directory name doesn't have to be `dataset/`).  
     - Use "--resize_int" to specify the image size. For example, if you specify 256, the image will be adjusted to "256x256".  
-
+	
     ```
     python file_number_remove_resize.py --file_number 20000
                                         --image_dir dataset/
@@ -118,7 +118,7 @@ From here, you run the program to adjust the number of images and their sizes, t
     - Use "--image_dir" to specify the directory to be scanned.  
     - Use "--tvt_rate" to specify the ratio of the number of images for each class.  
     The default value is "0.7, 0.2, 0.1" (for training, validation, and testing).  
-
+	
     ```
     python split_dataset.py --image_dir {--resize_int}_resized_{--image_dir}/
                             --tvt_rate 0.7,0.2,0.1
@@ -133,7 +133,7 @@ From here, you run the program to adjust the number of images and their sizes, t
     - Use "--stn" to specify the number of images to be included in one tfrecord.  
     The default value is 10000 (try to change this value if you do not have enough memory for training).  
     When executed, it'll generate tfrecord format data in `tfrecord/{--resize_int}_resized_{--image_dir}_train/` etc.  
-
+	
     ```
     python make_tfrecord.py --image_dir {--resize_int}_resized_{--image_dir}_train/
                             --stn 10000
