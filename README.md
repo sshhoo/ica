@@ -78,7 +78,11 @@ From here, you run the program to adjust the number of images and their sizes, t
     - By adding "--subdir_mode", the number of files in subdirectories is also displayed.  
     If "--check_number" is specified as an integer, directories other than the specified number of files will be displayed.  
 
-    `python file_extension_number_checker.py --image_dir dataset/ --extension .png --subdir_mode`
+    ```
+    python file_extension_number_checker.py --image_dir dataset/
+                                            --extension .png
+                                            --subdir_mode
+	```
 
 - ### Delete unnecessary file
     This is the code to delete unnecessary files.  
@@ -88,7 +92,11 @@ From here, you run the program to adjust the number of images and their sizes, t
     The file will not be removed until "--remove_mode" is added (only to check the file).  
     Note that this option will cause the file to be removed.  
 
-    `python file_extension_remove.py --image_dir dataset/ --extension .png --without_mode`
+    ```
+    python file_extension_remove.py --image_dir dataset/
+                                    --extension .png
+                                    --without_mode
+	```
 
 - ### Adjust file number & resize image
     Adjust the number of files and image size for each class, and save them in different directories in the same directory structure.  
@@ -97,7 +105,11 @@ From here, you run the program to adjust the number of images and their sizes, t
     - Use "--image_dir" to specify the directory to be scanned(the directory name doesn't have to be `dataset/`).  
     - Use "--resize_int" to specify the image size. For example, if you specify 256, the image will be adjusted to "256x256".  
 
-    `python file_number_remove_resize.py --file_number 20000 --image_dir dataset/ --resize_int 256`  
+    ```
+    python file_number_remove_resize.py --file_number 20000
+                                        --image_dir dataset/
+                                        --resize_int 256
+	```
 
 <div align="center"><img src="https://user-images.githubusercontent.com/40710706/114126696-eb993400-9933-11eb-83c2-638db5d78a5b.png"></div>  
 
@@ -107,7 +119,10 @@ From here, you run the program to adjust the number of images and their sizes, t
     - Use "--tvt_rate" to specify the ratio of the number of images for each class.  
     The default value is "0.7, 0.2, 0.1" (for training, validation, and testing).  
 
-    `python split_dataset.py --image_dir {--resize_int}_resized_{--image_dir}/ --tvt_rate 0.7,0.2,0.1`  
+    ```
+    python split_dataset.py --image_dir {--resize_int}_resized_{--image_dir}/
+                            --tvt_rate 0.7,0.2,0.1
+	```
 
 <div align="center"><img src="https://user-images.githubusercontent.com/40710706/114129044-b93e0580-9938-11eb-825a-cc217da1e191.png"></div>  
 
@@ -119,7 +134,10 @@ From here, you run the program to adjust the number of images and their sizes, t
     The default value is 10000 (try to change this value if you do not have enough memory for training).  
     When executed, it'll generate tfrecord format data in `tfrecord/{--resize_int}_resized_{--image_dir}_train/` etc.  
 
-    `python make_tfrecord.py --image_dir {--resize_int}_resized_{--image_dir}_train/ --stn 10000`  
+    ```
+    python make_tfrecord.py --image_dir {--resize_int}_resized_{--image_dir}_train/
+                            --stn 10000
+	```
 
 - ### Learning & export model, labels
 	You'll use the created tfrecord for learning.  
@@ -157,16 +175,7 @@ From here, you run the program to adjust the number of images and their sizes, t
 	If you want to use this code as is, use the default.  
 	- If "--original_mode" is specified, training will be performed using the network model that you created yourself.  
 	You can freely build your own network model by modifying the corresponding part.  
-	python model_maker.py --image_dir {--resize_int}_resized_{--image_dir}_train/		--tfr_train_dir tfrecord/{--resize_int}_resized_{--image_dir}_train/  
-				--tfr_validation_dir tfrecord/{--resize_int}_resized_{--image_dir}_validation/  
-				--tfr_test_dir tfrecord/{--resize_int}_resized_{--image_dir}_test/  
-				--epochs 100  
-				--batch_size 32  
-				--mf resnet50  
-				--mw None  
-				--mtrain_mode  
-				--op sgd  
-				--loss categorical_crossentropy
+	
 	```
 	python model_maker.py --image_dir {--resize_int}_resized_{--image_dir}_train/
 	                      --tfr_train_dir tfrecord/{--resize_int}_resized_{--image_dir}_train/
