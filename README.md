@@ -229,7 +229,7 @@ First, rename `model.tflite` and `labels.txt`.
 Next, put `model.tflite` and `labels.txt` in place.  
 `cp model_result/labels.txt model_result/model.tflite examples/lite/codelabs/flower_classification/android/finish/app/src/main/assets/`  
 
-Navigate to the root directory where you want to create the app, and create the app with gradle(if you have already set up Android Studio, you should be able to use gradle).  
+Navigate to the root directory where you want to create the app, and create the app with gradle(if you have already set up Android Studio, you should be able to use [gradle](https://gradle.org/)).  
 `cd examples/lite/codelabs/flower_classification/android/finish/`  
 `sudo ./gradlew assembleDebug`  
 
