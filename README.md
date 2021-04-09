@@ -223,8 +223,8 @@ From here, you run the program to adjust the number of images and their sizes, t
 Generate an app using the `model.tflite` and `labels.txt` obtained from the training.  
 
 First, rename `model.tflite` and `labels.txt`.  
-`mv model_result/ model_result/model.tflite`  
-`mv model_result/ model_result/labels.txt`  
+`mv model_result/{--resize_int}_resized_{--image_dir}_train_model.tflite model_result/model.tflite`  
+`mv model_result/{--resize_int}_resized_{--image_dir}_train_labels.txt model_result/labels.txt`  
 
 Next, put `model.tflite` and `labels.txt` in place.  
 `cp model_result/labels.txt model_result/model.tflite examples/lite/codelabs/flower_classification/android/finish/app/src/main/assets/`  
