@@ -62,8 +62,8 @@ if not os.path.exists('model_result/'):
 if not os.path.exists("speed/"):
 	os.makedirs("speed/")
 
-if not os.path.exists(f'model_result/{os.path.dirname(args.tfr_test_dir).split("/")[-1]}_test_evaluate.txt'):
-	with open(f'model_result/{os.path.dirname(args.tfr_test_dir).split("/")[-1]}_test_evaluate.txt',"w"):pass
+if not os.path.exists(f'model_result/{os.path.dirname(args.tfr_test_dir).split("/")[-1]}_evaluate.txt'):
+	with open(f'model_result/{os.path.dirname(args.tfr_test_dir).split("/")[-1]}_evaluate.txt',"w"):pass
 
 if not os.path.exists("speed/model_speed.txt"):
 	with open("speed/model_speed.txt","w"):pass
@@ -300,7 +300,7 @@ add_character=add_character+f"{os.path.dirname(args.image_dir).split('/')[-1]}-"
 print('テストデータ評価')
 model.evaluate(dataset_test,verbose=1)
 
-with open(f'model_result/{os.path.dirname(args.tfr_test_dir).split("/")[-1]}_test_evaluate.txt',mode='a') as f:
+with open(f'model_result/{os.path.dirname(args.tfr_test_dir).split("/")[-1]}_evaluate.txt',mode='a') as f:
 	f.write(f'{ctime}\n')
 	f.write(f'{os.path.dirname(args.tfr_train_dir).split("/")[-1]}\n')
 	f.write('loss,accuracy\n')

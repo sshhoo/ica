@@ -164,7 +164,7 @@ From here, you run the program to adjust the number of images and their sizes, t
 	- `log_dir/`  
 	Logs of the training results are stored in this directory.  
 	You can check the training results by typing the command `tensorboard --logdir=log_dir`.  
-	- `model_result/~_test_evaluate.txt`  
+	- `model_result/{--resize_int}_resized_{--image_dir}_test_evaluate.txt`  
 	This file contains the values of accuracy and loss when using the test data.  
 	- `model_result/~_model.tflite`  
 	This is the model file needed to create the application.  
