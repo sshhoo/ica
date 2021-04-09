@@ -160,16 +160,16 @@ From here, you run the program to adjust the number of images and their sizes, t
 	
 	```
 	python model_maker.py --image_dir {--resize_int}_resized_{--image_dir}_train/  
-						--tfr_train_dir tfrecord/{--resize_int}_resized_{--image_dir}_train/  
-						--tfr_validation_dir tfrecord/{--resize_int}_resized_{--image_dir}_validation/  
-						--tfr_test_dir tfrecord/{--resize_int}_resized_{--image_dir}_test/  
-						--epochs 100  
-						--batch_size 32  
-						--mf resnet50  
-						--mw None  
-						--mtrain_mode  
-						--op sgd  
-						--loss categorical_crossentropy  
+					--tfr_train_dir tfrecord/{--resize_int}_resized_{--image_dir}_train/  
+					--tfr_validation_dir tfrecord/{--resize_int}_resized_{--image_dir}_validation/  
+					--tfr_test_dir tfrecord/{--resize_int}_resized_{--image_dir}_test/  
+					--epochs 100  
+					--batch_size 32  
+					--mf resnet50  
+					--mw None  
+					--mtrain_mode  
+					--op sgd  
+					--loss categorical_crossentropy  
 	```
 	
 	After executing the code, the following directories and files will be generated.  
