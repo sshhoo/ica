@@ -154,7 +154,36 @@ If "--original_mode" is specified, training will be performed using the network 
 You can freely build your own network model by modifying the corresponding part.  
 
 #### Models
-
+```
+densenet121			--->
+densenet169			--->
+densenet201			--->
+efficientnetb0		--->
+efficientnetb1		--->
+efficientnetb2		--->
+efficientnetb3		--->
+efficientnetb4		--->
+efficientnetb5		--->
+efficientnetb6		--->
+efficientnetb7		--->
+inceptionresnetv2	--->
+inceptionv3			--->
+mobilenet			--->
+mobilenetv2			--->
+mobilenetv3large	--->
+mobilenetv3small	--->
+nasnetlarge			--->
+nasnetmobile		--->
+resnet101			--->
+resnet101v2			--->
+resnet152			--->
+resnet152v2			--->
+resnet50			--->
+resnet50v2			--->
+vgg16				--->
+vgg19				--->
+xception			--->
+```
 
 
 
