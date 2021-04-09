@@ -148,7 +148,7 @@ From here, you run the program to adjust the number of images and their sizes, t
 	- If "--mtrain_mode" is specified, the weights of the model selected by "--mf" will be updated.  
 	If "--mtrain_mode" is not specified, the weights of the model part will not be updated.  
 	- Use "--op" to specify the optimization algorithm.  
-	The default is sgd.  
+	The default is "sgd".  
 	See "[Optimizer](#Optimizer)" below for details.  
 	- Use "--loss" to specify the loss function.  
 	The default is categorical_crossentropy.  
