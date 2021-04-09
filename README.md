@@ -159,7 +159,7 @@ From here, you run the program to adjust the number of images and their sizes, t
 	You can freely build your own network model by modifying the corresponding part.  
 
 	After executing the code, the following directories and files will be generated.  
-	- speed/model_speed.txt  
+	- `speed/model_speed.txt`  
 	This file contains the training time of the network model.
 	- log_dir/  
 	Logs of the training results are stored in this directory.  
