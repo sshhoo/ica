@@ -91,44 +91,44 @@ From here, you run the program to adjust the number of images and their sizes, t
     `python file_extension_remove.py --image_dir dataset/ --extension .png --without_mode`
 
 - ### Adjust file number & resize image
-Adjust the number of files and image size for each class, and save them in different directories in the same directory structure.  
-The name of the generated directory will be "{--resize_int}_resized_{--image_dir}".  
-Use "--file_number" to specify the number of files you want to align per class.  
-Use "--image_dir" to specify the directory to be scanned(the directory name doesn't have to be dataset/).  
-Use "--resize_int" to specify the image size. For example, if you specify 256, the image will be adjusted to "256x256".  
+    Adjust the number of files and image size for each class, and save them in different directories in the same directory structure.  
+    The name of the generated directory will be "{--resize_int}_resized_{--image_dir}".  
+    - Use "--file_number" to specify the number of files you want to align per class.  
+    - Use "--image_dir" to specify the directory to be scanned(the directory name doesn't have to be dataset/).  
+    - Use "--resize_int" to specify the image size. For example, if you specify 256, the image will be adjusted to "256x256".  
 
-`python file_number_remove_resize.py --file_number 20000 --image_dir dataset/ --resize_int 256`  
+    `python file_number_remove_resize.py --file_number 20000 --image_dir dataset/ --resize_int 256`  
 
 <div align="center"><img src="https://user-images.githubusercontent.com/40710706/114126696-eb993400-9933-11eb-83c2-638db5d78a5b.png"></div>  
 
 - ### Split dataset
-Divide the dataset into training, validation, and testing datasets.  
-Use "--image_dir" to specify the directory to be scanned.  
-Use "--tvt_rate" to specify the ratio of the number of images for each class.  
-The default value is "0.7, 0.2, 0.1" (for training, validation, and testing).  
+    Divide the dataset into training, validation, and testing datasets.  
+    - Use "--image_dir" to specify the directory to be scanned.  
+    - Use "--tvt_rate" to specify the ratio of the number of images for each class.  
+    The default value is "0.7, 0.2, 0.1" (for training, validation, and testing).  
 
-`python split_dataset.py --image_dir {--resize_int}_resized_{--image_dir}/ --tvt_rate 0.7,0.2,0.1`  
+    `python split_dataset.py --image_dir {--resize_int}_resized_{--image_dir}/ --tvt_rate 0.7,0.2,0.1`  
 
 <div align="center"><img src="https://user-images.githubusercontent.com/40710706/114129044-b93e0580-9938-11eb-825a-cc217da1e191.png"></div>  
 
 - ### Image2tfrecord
-Run the following code to convert the images into tfrecord format.  
-Convert each dataset into tfrecord (i.e., train, validate, and test, three times in total).  
-Use "--image_dir" to specify the directory to be scanned.  
-Use "--stn" to specify the number of images to be included in one tfrecord.  
-The default value is 10000 (try to change this value if you do not have enough memory for training).  
-When executed, it will generate tfrecord format data in tfrecord/{--resize_int}_resized_{--image_dir}_train/ etc.  
+    Run the following code to convert the images into tfrecord format.  
+    Convert each dataset into tfrecord (i.e., train, validate, and test, three times in total).  
+    - Use "--image_dir" to specify the directory to be scanned.  
+    - Use "--stn" to specify the number of images to be included in one tfrecord.  
+    The default value is 10000 (try to change this value if you do not have enough memory for training).  
+    When executed, it will generate tfrecord format data in tfrecord/{--resize_int}_resized_{--image_dir}_train/ etc.  
 
-`python make_tfrecord.py --image_dir {--resize_int}_resized_{--image_dir}_train/ --stn 10000`  
+    `python make_tfrecord.py --image_dir {--resize_int}_resized_{--image_dir}_train/ --stn 10000`  
 
 - ### Learning & export model, labels
-We will use the created tfrecord for learning.  
-By learning, we will create the "model.tflite" and "labels.txt" required for the application.  
-Get the label names and other information from the directory specified by "--image_dir". tfrecord/{--resize_int}_resized_{--image_dir}_train/ is created from the original directory, {--resize_int}_resized_{--image_dir}_train/. resized_{--image_dir}_train/ (specify "train").  
-"--tfr_train_dir" specifies the directory where the tfrecord used for training is stored. tfrecord/{--resize_int}_resized_{--image_dir}_train/ should be specified.  
-"--tfr_validation_dir" specifies the directory where the tfrecord used for training is stored. tfrecord/{--resize_int}_resized_{--image_dir}_validation/ should be specified.  
-"--tfr_test_dir" specifies the directory where the tfrecord used for training is stored. tfrecord/{--resize_int}_resized_{--image_dir}_test/ should be specified.  
-Use "--epochs" to specify the number of epochs.  
+    We will use the created tfrecord for learning.  
+    By learning, we will create the "model.tflite" and "labels.txt" required for the application.  
+    Get the label names and other information from the directory specified by "--image_dir". tfrecord/{--resize_int}_resized_{--image_dir}_train/ is created from the original directory, {--resize_int}_resized_{--image_dir}_train/. resized_{--image_dir}_train/ (specify "train").  
+    "--tfr_train_dir" specifies the directory where the tfrecord used for training is stored. tfrecord/{--resize_int}_resized_{--image_dir}_train/ should be specified.  
+    "--tfr_validation_dir" specifies the directory where the tfrecord used for training is stored. tfrecord/{--resize_int}_resized_{--image_dir}_validation/ should be specified.  
+	"--tfr_test_dir" specifies the directory where the tfrecord used for training is stored. tfrecord/{--resize_int}_resized_{--image_dir}_test/ should be specified.  
+	Use "--epochs" to specify the number of epochs.  
 The default value is 30.  
 Specify the batch size with "--batch_size".  
 The default value is 32.  
