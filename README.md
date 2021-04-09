@@ -166,12 +166,12 @@ efficientnetb4			--->
 efficientnetb5			--->
 efficientnetb6			--->
 efficientnetb7			--->
-inceptionresnetv2			--->
+inceptionresnetv2		--->
 inceptionv3			--->
 mobilenet			--->
 mobilenetv2			--->
-mobilenetv3large			--->
-mobilenetv3small			--->
+mobilenetv3large		--->
+mobilenetv3small		--->
 nasnetlarge			--->
 nasnetmobile			--->
 resnet101			--->
@@ -180,8 +180,8 @@ resnet152			--->
 resnet152v2			--->
 resnet50			--->
 resnet50v2			--->
-vgg16			--->
-vgg19			--->
+vgg16				--->
+vgg19				--->
 xception			--->
 ```
 
