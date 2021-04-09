@@ -77,8 +77,9 @@ From here, you run the program to adjust the number of images and their sizes, t
     - Use "--extension" to specify the extension you want to count (e.g. ".jpg", ".png").  
     - By adding "--subdir_mode", the number of files in subdirectories is also displayed.  
     If "--check_number" is specified as an integer, directories other than the specified number of files will be displayed.  
-	  
-    ```sh
+	
+	
+    ```
     python file_extension_number_checker.py --image_dir dataset/
                                             --extension .png
                                             --subdir_mode
