@@ -154,7 +154,7 @@ If "--original_mode" is specified, training will be performed using the network 
 You can freely build your own network model by modifying the corresponding part.  
 
 #### Models
-```
+
 densenet121			--->		[DenseNet121](https://www.tensorflow.org/api_docs/python/tf/keras/applications/DenseNet121)
 densenet169			--->		[]()
 densenet201			--->		[]()
@@ -183,7 +183,7 @@ resnet50v2			--->		[]()
 vgg16				--->		[]()
 vgg19				--->		[]()
 xception			--->		[]()
-```
+
 
 
 
