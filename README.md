@@ -117,13 +117,13 @@ From here, you run the program to adjust the number of images and their sizes, t
     - Use "--image_dir" to specify the directory to be scanned.  
     - Use "--stn" to specify the number of images to be included in one tfrecord.  
     The default value is 10000 (try to change this value if you do not have enough memory for training).  
-    When executed, it will generate tfrecord format data in `tfrecord/{--resize_int}_resized_{--image_dir}_train/` etc.  
+    When executed, it'll generate tfrecord format data in `tfrecord/{--resize_int}_resized_{--image_dir}_train/` etc.  
 
     `python make_tfrecord.py --image_dir {--resize_int}_resized_{--image_dir}_train/ --stn 10000`  
 
 - ### Learning & export model, labels
-	We will use the created tfrecord for learning.  
-	By learning, we will create the "model.tflite" and "labels.txt" required for the application.  
+	You'll use the created tfrecord for learning.  
+	By learning, you'll create the "model.tflite" and "labels.txt" required for the application.  
 	
 	- Get the label name and other information from the directory specified by "--image_dir".  
 	Specify the directory that was used to create `tfrecord/{--resize_int}_resized_{--image_dir}_train/`(i.e., `{--resize_int}_resized_{--image_dir}_train/`).  
@@ -153,7 +153,7 @@ From here, you run the program to adjust the number of images and their sizes, t
 	See "[Optimizer](#Optimizer)" below for details.  
 	- Use "--loss" to specify the loss function.  
 	The default is categorical_crossentropy.  
-	You can use any of the other functions listed [here](https://www.tensorflow.org/api_docs/python/tf/keras/losses), but it will result in an error in this code.  
+	You can use any of the other functions listed [here](https://www.tensorflow.org/api_docs/python/tf/keras/losses), but it'll result in an error in this code.  
 	If you want to use this code as is, use the default.  
 	- If "--original_mode" is specified, training will be performed using the network model that you created yourself.  
 	You can freely build your own network model by modifying the corresponding part.  
@@ -170,6 +170,12 @@ From here, you run the program to adjust the number of images and their sizes, t
 	This is the model file needed to create the application.  
 	- `model_result/{--resize_int}_resized_{--image_dir}_train_labels.txt`  
 	This is the label information required to create the app.  
+
+	#### Errors
+	- `ValueError: Cannot create a tensor proto whose content is larger than 2GB.`  
+	This is displayed when the number of dimensions in the model is too large.
+	In particular, fully connected layers tend to be large.
+	Making them smaller may improve the situation.
 
 	#### Models
 	The following is a list of model names that can be selected by "--mf".  
@@ -230,8 +236,8 @@ Navigate to the root directory where you want to create the app, and create the 
 The app will be created in the following directory.  
 `examples/lite/codelabs/flower_classification/android/finish/app/build/outputs/apk/debug/app-debug.apk`  
 
-When you run the app, it will look like the following image.  
-In the ica directory, we have placed `sample.apk`, `sample_model.tflite`, and `sample_labels.txt` as samples.  
+When you run the app, it'll look like the following image.  
+In the ica directory, I have placed `sample.apk`, `sample_model.tflite`, and `sample_labels.txt` as samples.  
 Please use them if you have any trouble when creating your application.  
 
 ## License
