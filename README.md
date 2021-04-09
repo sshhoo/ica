@@ -103,6 +103,13 @@ Use "--resize_int" to specify the image size. For example, if you specify 256, t
 
 - ### Split dataset
 
+
+
+
+<div align="center"><img src="https://user-images.githubusercontent.com/40710706/114129044-b93e0580-9938-11eb-825a-cc217da1e191.png"></div>  
+
+
+
 - ### Image2tfrecord
 
 
