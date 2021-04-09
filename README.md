@@ -14,6 +14,7 @@ By following the steps and running the code, you can create an Android applicati
     - [Check file number](#Check-file-number)
     - [Delete unnecessary file](#Delete-unnecessary-file)
     - [Adjust file number & resize image](#Adjust-file-number--resize-image)
+    - [Split dataset](#Split-dataset)
     - [Image2tfrecord](#Image2tfrecord)
     - [Learning & export model, labels](#Learning--export-model-labels)
 - [Build APK file & install app](#Build-APK-file--install-app)
