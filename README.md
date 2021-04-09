@@ -103,16 +103,23 @@ Use "--resize_int" to specify the image size. For example, if you specify 256, t
 
 - ### Split dataset
 Divide the dataset into training, validation, and testing datasets.  
-Use "--image_dir" to specify the directory to be scanned(the directory name doesn't have to be dataset/).  
+Use "--image_dir" to specify the directory to be scanned.  
 Use "--tvt_rate" to specify the ratio of the number of images for each class.  
 The default value is "0.7, 0.2, 0.1" (for training, validation, and testing).  
 
-`python split_dataset.py --image_dir dataset/ --tvt_rate 0.7,0.2,0.1`  
+`python split_dataset.py --image_dir {--resize_int}_resized_{--image_dir}/ --tvt_rate 0.7,0.2,0.1`  
 
 <div align="center"><img src="https://user-images.githubusercontent.com/40710706/114129044-b93e0580-9938-11eb-825a-cc217da1e191.png"></div>  
 
 - ### Image2tfrecord
+Run the following code to convert the images into tfrecord format.  
+Convert each dataset into tfrecord (i.e., train, validate, and test, three times in total).  
+Use "--image_dir" to specify the directory to be scanned.  
+Use "--stn" to specify the number of images to be included in one tfrecord.  
+The default value is 10000 (try to change this value if you do not have enough memory for training).  
+When executed, it will generate tfrecord format data in tfrecord/{--resize_int}_resized_{--image_dir}_train/ etc.  
 
+`python make_tfrecord.py --image_dir {--resize_int}_resized_{--image_dir}_train/ --stn 10000`  
 
 - ### Learning & export model, labels
 
