@@ -185,7 +185,7 @@ vgg19--->[VGG19](https://www.tensorflow.org/api_docs/python/tf/keras/application
 xception--->[Xception](https://www.tensorflow.org/api_docs/python/tf/keras/applications/Xception)  
 
 #### Optimizer  
-The following is a list of model names that can be selected by "--op".  
+The following is a list of optimizer names that can be selected by "--op".  
 adadelta--->[Adadelta](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adadelta)  
 adagrad--->[Adagrad](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adagrad)  
 adam--->[Adam](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam)  
