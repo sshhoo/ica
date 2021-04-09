@@ -73,7 +73,7 @@ From here, you run the program to adjust the number of images and their sizes, t
 
 - ### Check file number
     Displays the number of files in the directory to be scanned.  
-    - Use "--image_dir" to specify the directory to be scanned(the directory name doesn't have to be dataset/).  
+    - Use "--image_dir" to specify the directory to be scanned(the directory name doesn't have to be `dataset/`).  
     - Use "--extension" to specify the extension you want to count (e.g. ".jpg", ".png").  
     - By adding "--subdir_mode", the number of files in subdirectories is also displayed.  
     If "--check_number" is specified as an integer, directories other than the specified number of files will be displayed.  
@@ -82,7 +82,7 @@ From here, you run the program to adjust the number of images and their sizes, t
 
 - ### Delete unnecessary file
     This is the code to delete unnecessary files.  
-    - Use "--image_dir" to specify the directory to be scanned(the directory name doesn't have to be dataset/).  
+    - Use "--image_dir" to specify the directory to be scanned(the directory name doesn't have to be `dataset/`).  
     - Use "--extension" to specify the extension you want to count (e.g. ".jpg", ".png").  
     - By adding "--without_mode", files other than the extension specified by "--extension" will be selected.  
     The file will not be removed until "--remove_mode" is added (only to check the file).  
@@ -92,7 +92,7 @@ From here, you run the program to adjust the number of images and their sizes, t
 
 - ### Adjust file number & resize image
     Adjust the number of files and image size for each class, and save them in different directories in the same directory structure.  
-    The name of the generated directory will be "{--resize_int}_resized_{--image_dir}".  
+    The name of the generated directory will be `{--resize_int}_resized_{--image_dir}`.  
     - Use "--file_number" to specify the number of files you want to align per class.  
     - Use "--image_dir" to specify the directory to be scanned(the directory name doesn't have to be dataset/).  
     - Use "--resize_int" to specify the image size. For example, if you specify 256, the image will be adjusted to "256x256".  
