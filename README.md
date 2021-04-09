@@ -275,7 +275,7 @@ When you run the app, it'll look like the following image.
 In the `ica/`, I have placed `sample.apk`, `sample_model.tflite`, and `sample_labels.txt` as samples.  
 Please use them if you have any trouble when creating your application.  
 
-<div align="center"><img src="https://user-images.githubusercontent.com/40710706/114205580-66df0200-9995-11eb-8a4e-530d6eff3835.gif"></div>  
+<div align="center"><img src="https://user-images.githubusercontent.com/40710706/114205580-66df0200-9995-11eb-8a4e-530d6eff3835.gif" width="200" height="200"></div>  
 
 ## License
 Apache License 2.0  
