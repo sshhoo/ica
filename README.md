@@ -102,13 +102,12 @@ Use "--resize_int" to specify the image size. For example, if you specify 256, t
 <div align="center"><img src="https://user-images.githubusercontent.com/40710706/114126696-eb993400-9933-11eb-83c2-638db5d78a5b.png"></div>  
 
 - ### Split dataset
-
-
-
+Divide the dataset into training, validation, and testing datasets.  
+Use "--image_dir" to specify the directory to be scanned(the directory name doesn't have to be dataset/).  
+Use "--tvt_rate" to specify the ratio of the number of images for each class.  
+The default value is "0.7, 0.2, 0.1" (for training, validation, and testing).  
 
 <div align="center"><img src="https://user-images.githubusercontent.com/40710706/114129044-b93e0580-9938-11eb-825a-cc217da1e191.png"></div>  
-
-
 
 - ### Image2tfrecord
 
