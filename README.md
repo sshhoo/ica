@@ -95,9 +95,10 @@ The name of the generated directory will be "{--resize_int}_resized_{--image_dir
 Use "--file_number" to specify the number of files you want to align per class.  
 Use "--extension" to specify the extension you want to count (e.g. ".jpg", ".png").  
 Use "--resize_int" to specify the image size. For example, if you specify 256, the image will be adjusted to "256x256".  
-<div align="center"><img src="https://user-images.githubusercontent.com/40710706/114126696-eb993400-9933-11eb-83c2-638db5d78a5b.png"></div>  
 
 `python file_number_remove_resize.py --file_number 20000 --image_dir dataset/ --resize_int 256`  
+
+<div align="center"><img src="https://user-images.githubusercontent.com/40710706/114126696-eb993400-9933-11eb-83c2-638db5d78a5b.png"></div>  
 
 - ### Image2tfrecord
 
