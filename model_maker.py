@@ -18,7 +18,7 @@ parser.add_argument('--tfr_validation_dir',type=str,default='_',help='Path to fo
 parser.add_argument('--tfr_test_dir',type=str,default='_',help='Path to folders of tfrecord(test).')
 parser.add_argument('--epochs',type=int,default=30,help='epoch size')
 parser.add_argument('--batch_size',type=int,default=32,help='batch size')
-parser.add_argument('--mf',type=str,default='',help='model flag')
+parser.add_argument('--mf',type=str,default='mobilenetv2',help='model flag')
 parser.add_argument('--mw',type=str,default='imagenet',help='model weight')
 parser.add_argument('--mtrain_mode',action='store_true',help='trainable model mode')
 parser.add_argument('--op',type=str,default='sgd',help='optimizer')
