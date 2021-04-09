@@ -20,7 +20,7 @@ By following the steps and running the code, you can create an Android applicati
 - [License](#License)
 
 ## Workflow overview
-<div align="center"><img src="https://user-images.githubusercontent.com/40710706/114029149-31aeb300-98b4-11eb-9df4-7b3b50da883c.png"></div>
+<div align="center"><img src="https://user-images.githubusercontent.com/40710706/114128251-ed182b80-9936-11eb-8911-7687ce23fe8f.png"></div>
 
 ## Setting
 In order to run the code and create the app, the following settings are required.  
@@ -99,6 +99,8 @@ Use "--resize_int" to specify the image size. For example, if you specify 256, t
 `python file_number_remove_resize.py --file_number 20000 --image_dir dataset/ --resize_int 256`  
 
 <div align="center"><img src="https://user-images.githubusercontent.com/40710706/114126696-eb993400-9933-11eb-83c2-638db5d78a5b.png"></div>  
+
+- ### Split dataset
 
 - ### Image2tfrecord
 
