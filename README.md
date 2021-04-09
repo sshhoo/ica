@@ -235,7 +235,7 @@ Navigate to the root directory where you want to create the app, and create the 
 `cd examples/lite/codelabs/flower_classification/android/finish/`  
 `sudo ./gradlew assembleDebug`  
 
-The app will be created in the following directory.  
+The app(`app-debug.apk`) will be created in the following directory.  
 `examples/lite/codelabs/flower_classification/android/finish/app/build/outputs/apk/debug/app-debug.apk`  
 
 When you run the app, it'll look like the following image.  
