@@ -138,9 +138,9 @@ See "[Models](#Models)" below for details.
 Use "--mw" to specify the initial weights.  
 The default is "imagenet".  
 None  
-→Set the initial weights to random.  
+---> Set the initial weights to random.  
 imagenet  
-→ Set the initial weights to the weights obtained by training [ImageNet](http://www.image-net.org/index) included in the model selected with "--mf".  
+---> Set the initial weights to the weights obtained by training [ImageNet](http://www.image-net.org/index) included in the model selected with "--mf".  
 If "--mtrain_mode" is specified, the weights of the model selected by "--mf" will be updated.  
 If "--mtrain_mode" is not specified, the weights of the model part will not be updated.  
 Use "--op" to specify the optimization algorithm.  
@@ -155,7 +155,14 @@ You can freely build your own network model by modifying the corresponding part.
 
 #### Models
 
+
+
+
+
 #### Optimizer
+
+
+
 
 ## Build APK file & install app
 
