@@ -80,13 +80,14 @@ If "--check_number" is specified as an integer, directories other than the speci
 `python file_extension_number_checker.py --image_dir dataset/ --extension .png --subdir_mode`
 
 - ### Delete unnecessary file
+This is the code to delete unnecessary files.  
 Use "--image_dir" to specify the directory to be scanned(the directory name doesn't have to be dataset/).  
+Use "--extension" to specify the extension you want to count (e.g. ".jpg", ".png").  
+By adding "--without_mode", files other than the extension specified by "--extension" will be selected.  
+The file will not be removed until "--remove_mode" is added (only to check the file).  
+Note that this option will cause the file to be removed.  
 
-
-`python file_extension_remove.py --image_dir images/ --extension .png --without_mode`
-
-
-
+`python file_extension_remove.py --image_dir dataset/ --extension .png --without_mode`
 
 - ### Adjust file number & resize image
 
