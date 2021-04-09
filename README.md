@@ -154,7 +154,7 @@ If "--original_mode" is specified, training will be performed using the network 
 You can freely build your own network model by modifying the corresponding part.  
 
 #### Models
-
+The following is a list of model names that can be selected by "--mf".  
 densenet121--->[DenseNet121](https://www.tensorflow.org/api_docs/python/tf/keras/applications/DenseNet121)  
 densenet169--->[DenseNet169](https://www.tensorflow.org/api_docs/python/tf/keras/applications/DenseNet169)  
 densenet201--->[DenseNet201](https://www.tensorflow.org/api_docs/python/tf/keras/applications/DenseNet201)  
@@ -184,13 +184,16 @@ vgg16--->[VGG16](https://www.tensorflow.org/api_docs/python/tf/keras/application
 vgg19--->[VGG19](https://www.tensorflow.org/api_docs/python/tf/keras/applications/VGG19)  
 xception--->[Xception](https://www.tensorflow.org/api_docs/python/tf/keras/applications/Xception)  
 
-
-
-
-
-#### Optimizer
-
-
+#### Optimizer  
+The following is a list of model names that can be selected by "--op".  
+adadelta--->[Adadelta](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adadelta)  
+adagrad--->[Adagrad](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adagrad)  
+adam--->[Adam](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam)  
+adamax--->[Adamax](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adamax)  
+ftrl--->[Ftrl](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Ftrl)  
+nadam--->[Nadam](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Nadam)  
+rmsprop--->[RMSprop](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/RMSprop)  
+sgd--->[SGD](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/SGD)  
 
 
 ## Build APK file & install app
