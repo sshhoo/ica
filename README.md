@@ -71,7 +71,7 @@ But, please note the extension of images that can be loaded is ".jpg" or ".png".
 ## Usage
 From here, you run the program to adjust the number of images and their sizes, train them, and extract the network model information.  
 
-- ### Check file number
+* ### Check file number
 Displays the number of files in the directory to be scanned.  
 Use "--image_dir" to specify the directory to be scanned(the directory name doesn't have to be dataset/).  
 Use "--extension" to specify the extension you want to count (e.g. ".jpg", ".png").  
@@ -122,6 +122,9 @@ When executed, it will generate tfrecord format data in tfrecord/{--resize_int}_
 `python make_tfrecord.py --image_dir {--resize_int}_resized_{--image_dir}_train/ --stn 10000`  
 
 - ### Learning & export model, labels
+
+
+
 
 
 
