@@ -94,7 +94,7 @@ From here, you run the program to adjust the number of images and their sizes, t
     Adjust the number of files and image size for each class, and save them in different directories in the same directory structure.  
     The name of the generated directory will be `{--resize_int}_resized_{--image_dir}`.  
     - Use "--file_number" to specify the number of files you want to align per class.  
-    - Use "--image_dir" to specify the directory to be scanned(the directory name doesn't have to be dataset/).  
+    - Use "--image_dir" to specify the directory to be scanned(the directory name doesn't have to be `dataset/`).  
     - Use "--resize_int" to specify the image size. For example, if you specify 256, the image will be adjusted to "256x256".  
 
     `python file_number_remove_resize.py --file_number 20000 --image_dir dataset/ --resize_int 256`  
@@ -117,7 +117,7 @@ From here, you run the program to adjust the number of images and their sizes, t
     - Use "--image_dir" to specify the directory to be scanned.  
     - Use "--stn" to specify the number of images to be included in one tfrecord.  
     The default value is 10000 (try to change this value if you do not have enough memory for training).  
-    When executed, it will generate tfrecord format data in tfrecord/{--resize_int}_resized_{--image_dir}_train/ etc.  
+    When executed, it will generate tfrecord format data in `tfrecord/{--resize_int}_resized_{--image_dir}_train/` etc.  
 
     `python make_tfrecord.py --image_dir {--resize_int}_resized_{--image_dir}_train/ --stn 10000`  
 
