@@ -122,13 +122,6 @@ When executed, it will generate tfrecord format data in tfrecord/{--resize_int}_
 `python make_tfrecord.py --image_dir {--resize_int}_resized_{--image_dir}_train/ --stn 10000`  
 
 - ### Learning & export model, labels
-
-
-
-
-
-
-## Build APK file & install app
 We will use the created tfrecord for learning.  
 By learning, we will create the "model.tflite" and "labels.txt" required for the application.  
 Get the label names and other information from the directory specified by "--image_dir". tfrecord/{--resize_int}_resized_{--image_dir}_train/ is created from the original directory, {--resize_int}_resized_{--image_dir}_train/. resized_{--image_dir}_train/ (specify "train").  
@@ -141,7 +134,7 @@ Specify the batch size with "--batch_size".
 The default value is 32.  
 Specify the network model name with "--mf".  
 The default is "mobilenetv2".  
-See "Models" below for details.  
+See "[Models](#Models)" below for details.  
 Use "--mw" to specify the initial weights.  
 The default is "imagenet".  
 None  
@@ -152,13 +145,20 @@ If "--mtrain_mode" is specified, the weights of the model selected by "--mf" wil
 If "--mtrain_mode" is not specified, the weights of the model part will not be updated.  
 Use "--op" to specify the optimization algorithm.  
 The default is sgd.  
-See "Optimizer" below for details.  
+See "[Optimizer](#Optimizer)" below for details.  
 Use "--loss" to specify the loss function.  
 The default is categorical_crossentropy.  
 You can use any of the other functions listed [here](https://www.tensorflow.org/api_docs/python/tf/keras/losses), but it will result in an error in this code.  
 If you want to use this code as is, use the default.  
 If "--original_mode" is specified, training will be performed using the network model that you created yourself.  
 You can freely build your own network model by modifying the corresponding part.  
+
+#### Models
+
+#### Optimizer
+
+## Build APK file & install app
+
 
 
 
