@@ -239,7 +239,7 @@ The app(`app-debug.apk`) will be created in the following directory.
 `examples/lite/codelabs/flower_classification/android/finish/app/build/outputs/apk/debug/app-debug.apk`  
 
 When you run the app, it'll look like the following image.  
-In the ica directory, I have placed `sample.apk`, `sample_model.tflite`, and `sample_labels.txt` as samples.  
+In the `ica/`, I have placed `sample.apk`, `sample_model.tflite`, and `sample_labels.txt` as samples.  
 Please use them if you have any trouble when creating your application.  
 
 ## License

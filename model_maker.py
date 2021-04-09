@@ -233,7 +233,7 @@ def trained_model(mf,mw,height,width,depth,mtrain_mode,train_label):
 	model=tf.keras.Sequential([
 		f_model,
 		tf.keras.layers.Flatten(),
-		tf.keras.layers.Dense(4096,activation='relu'),
+		tf.keras.layers.Dense(1024,activation='relu'),
 		tf.keras.layers.Dense(len(train_label),activation='softmax')
 	])
 	
