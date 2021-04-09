@@ -124,14 +124,14 @@ From here, you run the program to adjust the number of images and their sizes, t
 - ### Learning & export model, labels
 	We will use the created tfrecord for learning.  
 	By learning, we will create the "model.tflite" and "labels.txt" required for the application.  
-	- Get the label names and other information from the directory specified by "--image_dir".  
-	`tfrecord/{--resize_int}_resized_{--image_dir}_train/` is created from the original directory, `{--resize_int}_resized_{--image_dir}_train/`(specify "train").  
-	- "--tfr_train_dir" specifies the directory where the tfrecord used for training is stored.  
-	`tfrecord/{--resize_int}_resized_{--image_dir}_train/` should be specified.  
-	- "--tfr_validation_dir" specifies the directory where the tfrecord used for training is stored.  
-	`tfrecord/{--resize_int}_resized_{--image_dir}_validation/` should be specified.  
-	- "--tfr_test_dir" specifies the directory where the tfrecord used for training is stored.  
-	`tfrecord/{--resize_int}_resized_{--image_dir}_test/` should be specified.  
+	- Get the label name and other information from the directory specified by "--image_dir".  
+	Specify the directory that was used to create `tfrecord/{--resize_int}_resized_{--image_dir}_train/`(i.e., {--resize_int}_resized_{--image_dir}_train/).  
+	- Use "--tfr_train_dir" to specify the directory where the tfrecord for training is located.  
+	Please specify `tfrecord/{--resize_int}_resized_{--image_dir}_train/`.  
+	- Use "--tfr_validation_dir" to specify the directory where the tfrecord for validating is located.  
+	Please specify `tfrecord/{--resize_int}_resized_{--image_dir}_validation/`.  
+	- Use "--tfr_test_dir" to specify the directory where the tfrecord for testing is located.  
+	Please specify `tfrecord/{--resize_int}_resized_{--image_dir}_test/`.  
 	- Use "--epochs" to specify the number of epochs.  
 	The default value is 30.  
 	- Specify the batch size with "--batch_size".  
