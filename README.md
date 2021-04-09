@@ -94,7 +94,7 @@ Note that this option will cause the file to be removed.
 Adjust the number of files and image size for each class, and save them in different directories in the same directory structure.  
 The name of the generated directory will be "{--resize_int}_resized_{--image_dir}".  
 Use "--file_number" to specify the number of files you want to align per class.  
-Use "--extension" to specify the extension you want to count (e.g. ".jpg", ".png").  
+Use "--image_dir" to specify the directory to be scanned(the directory name doesn't have to be dataset/).  
 Use "--resize_int" to specify the image size. For example, if you specify 256, the image will be adjusted to "256x256".  
 
 `python file_number_remove_resize.py --file_number 20000 --image_dir dataset/ --resize_int 256`  
@@ -106,6 +106,8 @@ Divide the dataset into training, validation, and testing datasets.
 Use "--image_dir" to specify the directory to be scanned(the directory name doesn't have to be dataset/).  
 Use "--tvt_rate" to specify the ratio of the number of images for each class.  
 The default value is "0.7, 0.2, 0.1" (for training, validation, and testing).  
+
+`python split_dataset.py --image_dir dataset/ --tvt_rate 0.7,0.2,0.1`  
 
 <div align="center"><img src="https://user-images.githubusercontent.com/40710706/114129044-b93e0580-9938-11eb-825a-cc217da1e191.png"></div>  
 
