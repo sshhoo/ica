@@ -127,11 +127,11 @@ From here, you run the program to adjust the number of images and their sizes, t
 	- Get the label names and other information from the directory specified by "--image_dir".  
 	`tfrecord/{--resize_int}_resized_{--image_dir}_train/` is created from the original directory, `{--resize_int}_resized_{--image_dir}_train/`(specify "train").  
 	- "--tfr_train_dir" specifies the directory where the tfrecord used for training is stored.  
-	tfrecord/{--resize_int}_resized_{--image_dir}_train/ should be specified.  
+	`tfrecord/{--resize_int}_resized_{--image_dir}_train/` should be specified.  
 	- "--tfr_validation_dir" specifies the directory where the tfrecord used for training is stored.  
-	tfrecord/{--resize_int}_resized_{--image_dir}_validation/ should be specified.  
+	`tfrecord/{--resize_int}_resized_{--image_dir}_validation/` should be specified.  
 	- "--tfr_test_dir" specifies the directory where the tfrecord used for training is stored.  
-	tfrecord/{--resize_int}_resized_{--image_dir}_test/ should be specified.  
+	`tfrecord/{--resize_int}_resized_{--image_dir}_test/` should be specified.  
 	- Use "--epochs" to specify the number of epochs.  
 	The default value is 30.  
 	- Specify the batch size with "--batch_size".  
