@@ -179,6 +179,7 @@ From here, you run the program to adjust the number of images and their sizes, t
 
 	#### Models
 	The following is a list of model names that can be selected by "--mf".  
+	
 	densenet121--->[DenseNet121](https://www.tensorflow.org/api_docs/python/tf/keras/applications/DenseNet121)  
 	densenet169--->[DenseNet169](https://www.tensorflow.org/api_docs/python/tf/keras/applications/DenseNet169)  
 	densenet201--->[DenseNet201](https://www.tensorflow.org/api_docs/python/tf/keras/applications/DenseNet201)  
@@ -210,6 +211,7 @@ From here, you run the program to adjust the number of images and their sizes, t
 
 	#### Optimizer  
 	The following is a list of optimizer names that can be selected by "--op".  
+	
 	adadelta--->[Adadelta](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adadelta)  
 	adagrad--->[Adagrad](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adagrad)  
 	adam--->[Adam](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam)  
