@@ -171,7 +171,7 @@ From here, you run the program to adjust the number of images and their sizes, t
 	- `model_result/{--resize_int}_resized_{--image_dir}_train_labels.txt`  
 	This is the label information required to create the app.  
 
-	#### Errors
+	#### Error
 	- `ValueError: Cannot create a tensor proto whose content is larger than 2GB.`  
 	This is displayed when the number of dimensions in the model is too large.  
 	In particular, fully connected layers tend to be large.  
