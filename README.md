@@ -125,7 +125,7 @@ From here, you run the program to adjust the number of images and their sizes, t
 	We will use the created tfrecord for learning.  
 	By learning, we will create the "model.tflite" and "labels.txt" required for the application.  
 	- Get the label names and other information from the directory specified by "--image_dir".  
-	tfrecord/{--resize_int}_resized_{--image_dir}_train/ is created from the original directory, {--resize_int}_resized_{--image_dir}_train/. resized_{--image_dir}_train/ (specify "train").  
+	`tfrecord/{--resize_int}_resized_{--image_dir}_train/` is created from the original directory, `{--resize_int}_resized_{--image_dir}_train/`(specify "train").  
 	- "--tfr_train_dir" specifies the directory where the tfrecord used for training is stored.  
 	tfrecord/{--resize_int}_resized_{--image_dir}_train/ should be specified.  
 	- "--tfr_validation_dir" specifies the directory where the tfrecord used for training is stored.  
