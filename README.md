@@ -158,9 +158,9 @@ From here, you run the program to adjust the number of images and their sizes, t
 	- If "--original_mode" is specified, training will be performed using the network model that you created yourself.  
 	You can freely build your own network model by modifying the corresponding part.  
 	
-	```sh
-	python model_maker.py --image_dir {--resize_int}_resized_{--image_dir}_train/  
-				--tfr_train_dir tfrecord/{--resize_int}_resized_{--image_dir}_train/  
+	```
+	python model_maker.py --image_dir {--resize_int}_resized_{--image_dir}_train/ 
+			--tfr_train_dir tfrecord/{--resize_int}_resized_{--image_dir}_train/  
 				--tfr_validation_dir tfrecord/{--resize_int}_resized_{--image_dir}_validation/  
 				--tfr_test_dir tfrecord/{--resize_int}_resized_{--image_dir}_test/  
 				--epochs 100  
