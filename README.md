@@ -72,11 +72,11 @@ But, please note the extension of images that can be loaded is ".jpg" or ".png".
 From here, you run the program to adjust the number of images and their sizes, train them, and extract the network model information.  
 
 - ### Check file number
-Displays the number of files in the directory to be scanned.  
-    * Use "--image_dir" to specify the directory to be scanned(the directory name doesn't have to be dataset/).  
-    * Use "--extension" to specify the extension you want to count (e.g. ".jpg", ".png").  
-    * By adding "--subdir_mode", the number of files in subdirectories is also displayed.  
-If "--check_number" is specified as an integer, directories other than the specified number of files will be displayed.  
+    Displays the number of files in the directory to be scanned.  
+    - Use "--image_dir" to specify the directory to be scanned(the directory name doesn't have to be dataset/).  
+    - Use "--extension" to specify the extension you want to count (e.g. ".jpg", ".png").  
+    - By adding "--subdir_mode", the number of files in subdirectories is also displayed.  
+    If "--check_number" is specified as an integer, directories other than the specified number of files will be displayed.  
 
 `python file_extension_number_checker.py --image_dir dataset/ --extension .png --subdir_mode`
 
