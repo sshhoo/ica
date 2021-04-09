@@ -157,7 +157,21 @@ From here, you run the program to adjust the number of images and their sizes, t
 	If you want to use this code as is, use the default.  
 	- If "--original_mode" is specified, training will be performed using the network model that you created yourself.  
 	You can freely build your own network model by modifying the corresponding part.  
-
+	
+	```
+	python model_maker.py --image_dir {--resize_int}_resized_{--image_dir}_train/  
+						   --tfr_train_dir tfrecord/{--resize_int}_resized_{--image_dir}_train/  
+						   --tfr_validation_dir tfrecord/{--resize_int}_resized_{--image_dir}_validation/  
+						   --tfr_test_dir tfrecord/{--resize_int}_resized_{--image_dir}_test/  
+						   --epochs 100  
+						   --batch_size 32  
+						   --mf resnet50  
+						   --mw None  
+						   --mtrain_mode  
+						   --op sgd  
+						   --loss categorical_crossentropy  
+	```
+	
 	After executing the code, the following directories and files will be generated.  
 	- `speed/model_speed.txt`  
 	This file contains the training time of the network model.
