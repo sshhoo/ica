@@ -166,9 +166,9 @@ From here, you run the program to adjust the number of images and their sizes, t
 	You can check the training results by typing the command `tensorboard --logdir=log_dir`.  
 	- `model_result/{--resize_int}_resized_{--image_dir}_test_evaluate.txt`  
 	This file contains the values of accuracy and loss when using the test data.  
-	- `model_result/~_model.tflite`  
+	- `model_result/{--resize_int}_resized_{--image_dir}_train_model.tflite`  
 	This is the model file needed to create the application.  
-	- `model_result/~_labels.txt`  
+	- `model_result/{--resize_int}_resized_{--image_dir}_train_labels.txt`  
 	This is the label information required to create the app.  
 
 	#### Models
@@ -214,12 +214,25 @@ From here, you run the program to adjust the number of images and their sizes, t
 	sgd--->[SGD](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/SGD)  
 
 ## Build APK file & install app
+Generate an app using the `model.tflite` and `labels.txt` obtained from the training.  
 
+First, rename `model.tflite` and `labels.txt`.  
+`mv model_result/ model_result/model.tflite`  
+`mv model_result/ model_result/labels.txt`  
 
+Next, put `model.tflite` and `labels.txt` in place.  
+`cp model_result/labels.txt model_result/model.tflite examples/lite/codelabs/flower_classification/android/finish/app/src/main/assets/`  
 
+Navigate to the root directory where you want to create the app, and create the app with gradle(if you have already set up Android Studio, you should be able to use gradle).  
+`cd examples/lite/codelabs/flower_classification/android/finish/`  
+`sudo ./gradlew assembleDebug`  
 
+The app will be created in the following directory.  
+`examples/lite/codelabs/flower_classification/android/finish/app/build/outputs/apk/debug/app-debug.apk`  
 
-
+When you run the app, it will look like the following image.  
+In the ica directory, we have placed sample.apk, sample_model.tflite, and sample_labels.txt as samples.  
+Please use them if you have any trouble when creating your application.  
 
 ## License
 Apache License 2.0  
