@@ -163,14 +163,13 @@ From here, you run the program to adjust the number of images and their sizes, t
 	This file contains the training time of the network model.
 	- `log_dir/`  
 	Logs of the training results are stored in this directory.  
-	You can check the training results by typing the command "tensorboard --logdir=log_dir".  
+	You can check the training results by typing the command `tensorboard --logdir=log_dir`.  
 	- `model_result/~_test_evaluate.txt`  
 	This file contains the values of accuracy and loss when using the test data.  
 	- `model_result/~_model.tflite`  
 	This is the model file needed to create the application.  
 	- `model_result/~_labels.txt`  
 	This is the label information required to create the app.  
-
 
 	#### Models
 	The following is a list of model names that can be selected by "--mf".  
