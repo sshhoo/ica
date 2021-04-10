@@ -36,7 +36,7 @@ Please refer to the following URL to install Android Studio.
 The following explanation assumes you have installed it in `/opt/` on Linux.  
 [URL](https://developer.android.com/studio/install)  
 
-Next, go to "SDK Manager" in "Configure" and install "SDK" and "NDK"(Required for the device you plan to install).  
+Next, go to "SDK Manager" in "Configure" and install "SDK" (9.0↑) and "NDK" (Required for the device you plan to install).  
 Then, open  
 `ica/examples/lite/codelabs/flower_classification/android/finish/`  
 from "Open an Existing Project".  
@@ -51,7 +51,7 @@ After the installation is complete, close Android Studio.
 - ### pip requirements
 Use `pip` to install this package.  
 
-`pip install pillow tensorflow(or tensorflow-gpu)`
+`pip install pillow tensorflow (or tensorflow-gpu)`
 
 #### Requirements  
 ```
@@ -63,7 +63,7 @@ tensorflow(-gpu)>=2.4.1
 - ### Dataset
 Store the images to be learned in a directory for each class.  
 Place a directory containing a directory for each class in the root directory.  
-The size of images doesn't matter(to be adjusted later).  
+The size of images doesn't matter (to be adjusted later).  
 But, please note the extension of images that can be loaded is ".jpg" or ".png".  
 
 <div align="center"><img src="https://user-images.githubusercontent.com/40710706/114058712-ac84c780-98ce-11eb-93f3-3f3165b3a0a6.png"></div>
@@ -73,7 +73,7 @@ From here, you run the program to adjust the number of images and their sizes, t
 
 - ### Check file number
     Displays the number of files in the directory to be scanned.  
-    - Use "--image_dir" to specify the directory to be scanned(the directory name doesn't have to be `dataset/`).  
+    - Use "--image_dir" to specify the directory to be scanned (the directory name doesn't have to be `dataset/`).  
     - Use "--extension" to specify the extension you want to count (e.g. ".jpg", ".png").  
     - By adding "--subdir_mode", the number of files in subdirectories is also displayed.  
     If "--check_number" is specified as an integer, directories other than the specified number of files will be displayed.  
@@ -87,7 +87,7 @@ From here, you run the program to adjust the number of images and their sizes, t
 
 - ### Delete unnecessary file
     This is the code to delete unnecessary files.  
-    - Use "--image_dir" to specify the directory to be scanned(the directory name doesn't have to be `dataset/`).  
+    - Use "--image_dir" to specify the directory to be scanned (the directory name doesn't have to be `dataset/`).  
     - Use "--extension" to specify the extension you want to count (e.g. ".jpg", ".png").  
     - By adding "--without_mode", files other than the extension specified by "--extension" will be selected.  
     The file will not be removed until "--remove_mode" is added (only to check the file).  
@@ -103,7 +103,7 @@ From here, you run the program to adjust the number of images and their sizes, t
     Adjust the number of files and image size for each class, and save them in different directories in the same directory structure.  
     The name of the generated directory will be `{--resize_int}_resized_{--image_dir}`.  
     - Use "--file_number" to specify the number of files you want to align per class.  
-    - Use "--image_dir" to specify the directory to be scanned(the directory name doesn't have to be `dataset/`).  
+    - Use "--image_dir" to specify the directory to be scanned (the directory name doesn't have to be `dataset/`).  
     - Use "--resize_int" to specify the image size. For example, if you specify 256, the image will be adjusted to "256x256".  
 	
     ```
@@ -268,7 +268,7 @@ Navigate to the root directory where you want to create the app, and create the 
 `cd examples/lite/codelabs/flower_classification/android/finish/`  
 `sudo ./gradlew assembleDebug`  
 
-The app(`app-debug.apk`) will be created in the following directory.  
+The app (`app-debug.apk`) will be created in the following directory.  
 `examples/lite/codelabs/flower_classification/android/finish/app/build/outputs/apk/debug/app-debug.apk`  
 
 When you run the app, it'll look like the following image.  
