@@ -21,7 +21,7 @@ By following the steps and running the code, you can create an Android applicati
 - [License](#License)
 
 ## Workflow overview
-<div align="center"><img src="https://user-images.githubusercontent.com/40710706/114128251-ed182b80-9936-11eb-8911-7687ce23fe8f.png"></div>
+<div align="center"><img src="https://user-images.githubusercontent.com/40710706/114274199-4cba2800-9a58-11eb-821a-c1f9cdd3c73c.png"></div>
 
 ## Setting
 In order to run the code and create the app, the following settings are required.  
@@ -66,7 +66,7 @@ Place a directory containing a directory for each class in the root directory.
 The size of images doesn't matter (to be adjusted later).  
 But, please note the extension of images that can be loaded is ".jpg" or ".png".  
 
-<div align="center"><img src="https://user-images.githubusercontent.com/40710706/114058712-ac84c780-98ce-11eb-93f3-3f3165b3a0a6.png"></div>
+<div align="center"><img src="https://user-images.githubusercontent.com/40710706/114274203-4f1c8200-9a58-11eb-9f0c-a453382ff57f.png"></div>
 
 ## Usage
 From here, you run the program to adjust the number of images and their sizes, train them, and extract the network model information.  
@@ -112,7 +112,7 @@ From here, you run the program to adjust the number of images and their sizes, t
                                         --resize_int 256
 	```
 
-<div align="center"><img src="https://user-images.githubusercontent.com/40710706/114126696-eb993400-9933-11eb-83c2-638db5d78a5b.png"></div>  
+<div align="center"><img src="https://user-images.githubusercontent.com/40710706/114274206-52177280-9a58-11eb-97e6-53401523c1f0.png"></div>  
 
 - ### Split dataset
     Divide the dataset into training, validation, and testing datasets.  
@@ -125,7 +125,7 @@ From here, you run the program to adjust the number of images and their sizes, t
                             --tvt_rate 0.7,0.2,0.1
 	```
 
-<div align="center"><img src="https://user-images.githubusercontent.com/40710706/114129044-b93e0580-9938-11eb-825a-cc217da1e191.png"></div>  
+<div align="center"><img src="https://user-images.githubusercontent.com/40710706/114274210-5479cc80-9a58-11eb-908c-423c7fade3ef.png"></div>  
 
 - ### Image2tfrecord
     Run the following code to convert the images into tfrecord format.  
