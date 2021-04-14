@@ -14,6 +14,7 @@ if args.image_dir!='_':
 		print(args.image_dir)
 		sys.exit(1)
 
+#with
 if args.without_mode!=True:
 	for (dir,subs,files) in os.walk(args.image_dir):
 		for file in files:
@@ -25,6 +26,7 @@ if args.without_mode!=True:
 					if args.remove_mode==True:
 						os.remove(target)
 
+#without
 if args.without_mode==True:
 	for (dir,subs,files) in os.walk(args.image_dir):
 		for file in files:
