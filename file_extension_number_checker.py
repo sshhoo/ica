@@ -110,4 +110,3 @@ else:
 	print('file_number')
 	print(file_extension_dict[extension[0]])
 	print('')
-
