@@ -97,4 +97,3 @@ for i in range(len(subdir_list)):
 							f+=1
 					else:
 						continue
-
