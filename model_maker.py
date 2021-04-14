@@ -71,6 +71,7 @@ if not os.path.exists("speed/model_speed.txt"):
 if args.mw=='None':
 	args.mw=None
 
+#train--->most file number dataset(in train, validation, test)
 train_list=[]
 
 for (dir,subs,files) in os.walk(args.image_dir):
@@ -297,7 +298,7 @@ else:
 rt=time.time()-bt
 add_character=add_character+f"{os.path.dirname(args.image_dir).split('/')[-1]}-"+str(args.batch_size)+'-'+str(args.op)+'-'+str(args.mf)+': '+str(rt)+' sec'+'\n\n'
 
-print('テストデータ評価')
+print('test\'s result')
 model.evaluate(dataset_test,verbose=1)
 
 with open(f'model_result/{os.path.dirname(args.tfr_test_dir).split("/")[-1]}_evaluate.txt',mode='a') as f:
