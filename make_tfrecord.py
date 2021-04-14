@@ -34,6 +34,7 @@ def image_example(image_path,label):
 	
 	return tf.train.Example(features=tf.train.Features(feature=feature))
 
+#train--->most file number dataset(in train, validation, test)
 train_list=[]
 
 for (dir,subs,files) in os.walk(args.image_dir):
