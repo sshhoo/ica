@@ -13,6 +13,7 @@ parser.add_argument('--image_dir',type=str,default='_',help='Path to folders of 
 parser.add_argument('--resize_int',type=int,default=-1,help='resize integer')
 args=parser.parse_args()
 
+#Image loadable
 ImageFile.LOAD_TRUNCATED_IMAGES=True
 
 if args.image_dir!='_':
@@ -42,6 +43,7 @@ if args.resize_int!=-1:
 						if os.path.isfile('/'.join(target_list)):
 							continue
 						try:
+							#tensorflow
 							img_raw=tf.io.read_file(target)
 							img_tensor=tf.image.decode_image(img_raw)
 							if count>=args.file_number:
@@ -49,11 +51,13 @@ if args.resize_int!=-1:
 								os.remove(target)
 							else:
 								try:
+									#Pillow
 									img=Image.open(target)
 									img_resize=img.resize((args.resize_int,args.resize_int))
 									try:
 										img_resize.save('/'.join(target_list))
 										try:
+											#resize tensorflow
 											img_raw_resize=tf.io.read_file('/'.join(target_list))
 											img_tensor_resize=tf.image.decode_image(img_raw_resize)
 											count+=1
