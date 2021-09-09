@@ -281,6 +281,6 @@ Please use them if you have any trouble when creating your application.
 
 <div align="center"><img src="https://user-images.githubusercontent.com/40710706/114205580-66df0200-9995-11eb-8a4e-530d6eff3835.gif" width="300" height="512"></div>  
 
-## License
+## License 
 Apache License 2.0  
 [URL](https://github.com/sshhoo/ica/blob/main/LICENSE)
