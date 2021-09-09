@@ -12,6 +12,7 @@ import tensorflow as tf
 assert tf.__version__.startswith('2')
 
 parser=argparse.ArgumentParser()
+parser.add_argument('--gpu_limit_gb_rate',type=float,default=5.0,help='1GB*args')
 parser.add_argument('--image_dir',type=str,default='_',help='same directory making tfrecord')
 parser.add_argument('--tfr_train_dir',type=str,default='_',help='Path to folders of tfrecord(train).')
 parser.add_argument('--tfr_validation_dir',type=str,default='_',help='Path to folders of tfrecord(validation).')
@@ -28,6 +29,20 @@ parser.add_argument('--tensorflow_mode',action='store_true',help='tensorflow mod
 args=parser.parse_args()
 
 AUTOTUNE=tf.data.experimental.AUTOTUNE
+
+gpus = tf.config.experimental.list_physical_devices('GPU')
+if gpus:
+	# Restrict TensorFlow to only allocate 1GB of memory on the first GPU
+	try:
+	tf.config.experimental.set_virtual_device_configuration(
+		gpus[0],
+		[tf.config.experimental.VirtualDeviceConfiguration(memory_limit=1024*args.gpu_limit_gb_rate)])
+	logical_gpus = tf.config.experimental.list_logical_devices('GPU')
+	print(len(gpus), "Physical GPUs,", len(logical_gpus), "Logical GPUs")
+	except RuntimeError as e:
+		# Virtual devices must be set before GPUs have been initialized
+		print(e)
+
 
 ctime='{0:%Y_%m_%d_%H_%M_%S}'.format(datetime.datetime.now())
 add_character=copy.deepcopy(ctime)+'\n'
