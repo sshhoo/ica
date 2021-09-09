@@ -146,7 +146,7 @@ From here, you run the program to adjust the number of images and their sizes, t
 	
 	- It is possible to limit the use of GPU memory with the argument "--gpu_limit_gb_rate".  
 	Not set by default (uses all available GPU memory).  
-	Limit the GPU memory used to "1GB x value" according to the set float type value.  
+	Limit the GPU memory used to "1GB*args.gpu_limit_gb_rate" according to the set float type value.  
 	If there is an error in generating `model.tflite`, adjusting this value may improve it.  
 	- Get the label name and other information from the directory specified by "--image_dir".  
 	Specify the directory that was used to create `tfrecord/{--resize_int}_resized_{--image_dir}_train/`(i.e., `{--resize_int}_resized_{--image_dir}_train/`).  
